@@ -1,0 +1,17 @@
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.Dialogs.baseDialog.resources
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.Dialogs.EstudianteDialog.resources
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.Dialogs.GastosDialog.resources
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.Form1.resources
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.Forms.frmEstudiantesList.resources
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.Forms.frmGastosList.resources
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.Properties.Resources.resources
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.csproj.GenerateResource.Cache
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\bin\Debug\clasesvirtualesprogramacion.exe.config
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\bin\Debug\clasesvirtualesprogramacion.exe
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\bin\Debug\clasesvirtualesprogramacion.pdb
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\bin\Debug\MySql.Data.dll
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\bin\Debug\Renci.SshNet.dll
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.exe
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.pdb
+C:\Users\Jetstereo\Documents\Visual Studio 2015\Projects\clasesvirtualesprogramacion\clasesvirtualesprogramacion\obj\Debug\clasesvirtualesprogramacion.csprojResolveAssemblyReference.cache
