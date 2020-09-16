@@ -37,7 +37,7 @@
             this.fechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.categoriaComboBox = new System.Windows.Forms.ComboBox();
             this.subcategoriaComboBox = new System.Windows.Forms.ComboBox();
-            this.valorNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.nudValor = new System.Windows.Forms.NumericUpDown();
             this.formapagoComboBox = new System.Windows.Forms.ComboBox();
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
             fechaLabel = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             formapagoLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.erp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.valorNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudValor)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -160,12 +160,28 @@
             this.subcategoriaComboBox.Size = new System.Drawing.Size(424, 21);
             this.subcategoriaComboBox.TabIndex = 4;
             // 
-            // valorNumericUpDown
+            // nudValor
             // 
-            this.valorNumericUpDown.Location = new System.Drawing.Point(262, 17);
-            this.valorNumericUpDown.Name = "valorNumericUpDown";
-            this.valorNumericUpDown.Size = new System.Drawing.Size(58, 20);
-            this.valorNumericUpDown.TabIndex = 1;
+            this.nudValor.Location = new System.Drawing.Point(262, 17);
+            this.nudValor.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.nudValor.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudValor.Name = "nudValor";
+            this.nudValor.Size = new System.Drawing.Size(58, 20);
+            this.nudValor.TabIndex = 1;
+            this.nudValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nudValor.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // formapagoComboBox
             // 
@@ -192,6 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(536, 287);
             this.Controls.Add(descripcionLabel);
             this.Controls.Add(this.descripcionTextBox);
@@ -202,7 +219,7 @@
             this.Controls.Add(subcategoriaLabel);
             this.Controls.Add(this.subcategoriaComboBox);
             this.Controls.Add(valorLabel);
-            this.Controls.Add(this.valorNumericUpDown);
+            this.Controls.Add(this.nudValor);
             this.Controls.Add(formapagoLabel);
             this.Controls.Add(this.formapagoComboBox);
             this.Name = "GastosDialog";
@@ -211,7 +228,7 @@
             this.Controls.SetChildIndex(this.btnCancelar, 0);
             this.Controls.SetChildIndex(this.formapagoComboBox, 0);
             this.Controls.SetChildIndex(formapagoLabel, 0);
-            this.Controls.SetChildIndex(this.valorNumericUpDown, 0);
+            this.Controls.SetChildIndex(this.nudValor, 0);
             this.Controls.SetChildIndex(valorLabel, 0);
             this.Controls.SetChildIndex(this.subcategoriaComboBox, 0);
             this.Controls.SetChildIndex(subcategoriaLabel, 0);
@@ -222,7 +239,7 @@
             this.Controls.SetChildIndex(this.descripcionTextBox, 0);
             this.Controls.SetChildIndex(descripcionLabel, 0);
             ((System.ComponentModel.ISupportInitialize)(this.erp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.valorNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudValor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,7 +250,7 @@
         public System.Windows.Forms.DateTimePicker fechaDateTimePicker;
         public System.Windows.Forms.ComboBox categoriaComboBox;
         public System.Windows.Forms.ComboBox subcategoriaComboBox;
-        public System.Windows.Forms.NumericUpDown valorNumericUpDown;
+        public System.Windows.Forms.NumericUpDown nudValor;
         public System.Windows.Forms.ComboBox formapagoComboBox;
         public System.Windows.Forms.TextBox descripcionTextBox;
     }

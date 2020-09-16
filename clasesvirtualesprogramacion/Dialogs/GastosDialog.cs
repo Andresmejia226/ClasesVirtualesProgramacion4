@@ -28,7 +28,7 @@ namespace clasesvirtualesprogramacion.Dialogs
                 return NotificacionDeValidacion("Por favor seleccione la subcategoria de gastos", subcategoriaComboBox);
 
             if (descripcionTextBox.Text.Trim() == string.Empty)
-                return NotificacionDeValidacion("Por favor escriba la descricion que se gasto", descripcionTextBox);
+                return NotificacionDeValidacion("Por favor escriba la descrición que se gasto", descripcionTextBox);
 
             if (formapagoComboBox.SelectedIndex < 0)
                 return NotificacionDeValidacion("Por favor seleccione la forma de pago", formapagoComboBox);

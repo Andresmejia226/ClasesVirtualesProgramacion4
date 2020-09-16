@@ -33,7 +33,7 @@ namespace clasesvirtualesprogramacion.Forms
             frmNuevo.ShowDialog();
             if (frmNuevo.DialogResult == DialogResult.OK)
             {
-                string sqlInsert = string.Format("insert into gastos (fecha, categoria, subcategoria, descripcion, valor, formapago) values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", frmNuevo.fechaDateTimePicker.Value.ToString("yyyy-MM-dd"), frmNuevo.categoriaComboBox.Text, frmNuevo.subcategoriaComboBox.Text, frmNuevo.descripcionTextBox.Text.Trim(), frmNuevo.valorNumericUpDown.Value.ToString(), frmNuevo.formapagoComboBox.Text);
+                string sqlInsert = string.Format("insert into gastos (fecha, categoria, subcategoria, descripcion, valor, formapago) values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", frmNuevo.fechaDateTimePicker.Value.ToString("yyyy-MM-dd"), frmNuevo.categoriaComboBox.Text, frmNuevo.subcategoriaComboBox.Text, frmNuevo.descripcionTextBox.Text.Trim(), frmNuevo.nudValor.Value.ToString(), frmNuevo.formapagoComboBox.Text);
                 if (oConexion.AccionSQL(sqlInsert) == true)
                 {
                     this.frmGastosList_Load(null, null);
@@ -64,13 +64,13 @@ namespace clasesvirtualesprogramacion.Forms
                 frmEditar.categoriaComboBox.Text = Fila.Cells[2].Value.ToString();
                 frmEditar.subcategoriaComboBox.Text = Fila.Cells[3].Value.ToString();
                 frmEditar.descripcionTextBox.Text = Fila.Cells[4].Value.ToString();
-                frmEditar.valorNumericUpDown.Value = Convert.ToDecimal(Fila.Cells[5].Value);
+                frmEditar.nudValor.Value = Convert.ToDecimal(Fila.Cells[5].Value);
                 frmEditar.formapagoComboBox.Text = Fila.Cells[6].Value.ToString();
                 frmEditar.fechaDateTimePicker.Focus();
                 frmEditar.ShowDialog();
                 if (frmEditar.DialogResult == DialogResult.OK)
                 {
-                    string sqlUpdate = string.Format("update gastos set fecha='{0}', categoria='{1}', subcategoria='{2}', descripcion='{3}', valor='{4}', formapago='{5}' where id = {6}", frmEditar.fechaDateTimePicker.Value.ToString("yyyy-MM-dd"), frmEditar.categoriaComboBox.Text, frmEditar.subcategoriaComboBox.Text, frmEditar.descripcionTextBox.Text.Trim(), frmEditar.valorNumericUpDown.Value.ToString(), frmEditar.formapagoComboBox.Text, ID);
+                    string sqlUpdate = string.Format("update gastos set fecha='{0}', categoria='{1}', subcategoria='{2}', descripcion='{3}', valor='{4}', formapago='{5}' where id = {6}", frmEditar.fechaDateTimePicker.Value.ToString("yyyy-MM-dd"), frmEditar.categoriaComboBox.Text, frmEditar.subcategoriaComboBox.Text, frmEditar.descripcionTextBox.Text.Trim(), frmEditar.nudValor.Value.ToString(), frmEditar.formapagoComboBox.Text, ID);
                     if (oConexion.AccionSQL(sqlUpdate) == true)
                     {
                         this.frmGastosList_Load(null, null);
@@ -86,7 +86,7 @@ namespace clasesvirtualesprogramacion.Forms
         {
             if(gastosBindingSource.Count > 0)
             {
-                if (MessageBox.Show("Asegurese de querer eliminar la informacion de gastos. Desea eliminar permanentemente este registro?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                if (MessageBox.Show("Asegurese de querer eliminar la información de gastos. Desea eliminar permanentemente este registro?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
                     DataGridViewRow Fila = gastosDataGridView.CurrentRow;
                     Int16 ID = Int16.Parse(Fila.Cells[0].Value.ToString());
